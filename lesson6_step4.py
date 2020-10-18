@@ -18,6 +18,9 @@ class InputType(Enum):
     def __str__(self):
         return self.value
 
+class InputName(Enum):
+    city: str = 'City:*'
+    first_name: str = 'First name'
 
 try:
     browser = webdriver.Firefox()
