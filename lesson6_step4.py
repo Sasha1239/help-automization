@@ -9,7 +9,7 @@ xpath_pattern: str = "//input[@name='{input_type}']"
 
 xpath_pattern2: str = "//div[@class='form-group' and child::label[text()='City:*']]/input[@name='firstname']"
 
-
+# //div[@class='form-group' and child::label[contains(text(), '*')]]/input
 class InputType(Enum):
     first_name: str = 'first_name'
     last_name: str = 'last_name'
